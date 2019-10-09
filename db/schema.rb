@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_09_013249) do
+ActiveRecord::Schema.define(version: 2019_10_09_094316) do
+
+  create_table "family_informations", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "age", null: false
+    t.integer "birthday", null: false
+    t.string "blood_type", null: false
+    t.text "medical_history"
+    t.text "taking_medicine"
+    t.text "allergies"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"

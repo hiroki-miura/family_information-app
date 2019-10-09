@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     resources :users
   end
 
-  root to: 'tasks#index'
-  resources :tasks
+  root to: 'family_information#index'
+  resources :family_information
 end
